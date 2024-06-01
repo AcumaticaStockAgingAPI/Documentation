@@ -32,8 +32,11 @@ Copy code
 ### 1.2 FIFO Report (First-In, First-Out)
 
 <details>
+
 <summary>
+
 Generates a report based on the FIFO inventory method, where the oldest stock is sold first. Ensures accurate inventory valuation and compliance with accounting standards.
+
 </summary>
 
 EndpointName: `/stock-age/fifo-report`
