@@ -4,11 +4,7 @@
 
 ### 1.1 EOQ (Economic Order Quantity)
 
-<details>
-
-
 Calculates the optimal order quantity to minimize the total inventory costs, including ordering and holding costs. Helps users reduce inventory costs and avoid overstocking or under-stocking.
-
 
 EndpointName: `/stock-age/eoq`
 
@@ -32,7 +28,6 @@ Copy code
   "eoq": 200
 }
 ```
-</details>
 
 ### 1.2 FIFO Report (First-In, First-Out)
 
