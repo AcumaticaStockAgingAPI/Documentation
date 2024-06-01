@@ -4,7 +4,12 @@
 
 ### 1.1 EOQ (Economic Order Quantity)
 
+
+
+
+
 Calculates the optimal order quantity to minimize the total inventory costs, including ordering and holding costs. Helps users reduce inventory costs and avoid overstocking or under-stocking.
+
 
 EndpointName: `/stock-age/eoq`
 
@@ -23,21 +28,19 @@ API Input:
 API Output:
 
 ```json
-Copy code
 {
   "eoq": 200
 }
 ```
 
+
+
 ### 1.2 FIFO Report (First-In, First-Out)
 
-<details>
 
-<summary>
 
 Generates a report based on the FIFO inventory method, where the oldest stock is sold first. Ensures accurate inventory valuation and compliance with accounting standards.
 
-</summary>
 
 EndpointName: `/stock-age/fifo-report`
 
@@ -62,12 +65,12 @@ Copy code
 }
 ```
 
-</details>
+
 
 ### 1.3 LIFO Report (Last-In, First-Out)
 
-<details>
-<summary>Generates a report based on the LIFO inventory method, where the most recently added stock is sold first. Provides an alternative inventory valuation method, beneficial in inflationary environments for tax purposes.</summary>
+
+Generates a report based on the LIFO inventory method, where the most recently added stock is sold first. Provides an alternative inventory valuation method, beneficial in inflationary environments for tax purposes.
 
 EndpointName: `/stock-age/lifo-report`
 
@@ -90,12 +93,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 1.4 Reorder Point
 
-<details>
-<summary>Calculates the inventory level at which a new order should be placed to avoid stockouts. Helps maintain optimal inventory levels and ensures product availability.</summary>
+
+Calculates the inventory level at which a new order should be placed to avoid stockouts. Helps maintain optimal inventory levels and ensures product availability.
 
 EndpointName: `/stock-age/reorder-point`
 
@@ -118,12 +121,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 1.5 Stock Age Report
 
-<details>
-<summary>Provides an analysis of the age of inventory items. Helps identify slow-moving or obsolete stock, aiding in inventory management decisions.</summary>
+
+Provides an analysis of the age of inventory items. Helps identify slow-moving or obsolete stock, aiding in inventory management decisions.
 
 EndpointName: `/stock-age/report`
 
@@ -154,12 +157,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 1.6 Turnover Ratio
 
-<details>
-<summary>Measures how often inventory is sold and replaced over a period. Indicates inventory efficiency and product demand.</summary>
+
+Measures how often inventory is sold and replaced over a period. Indicates inventory efficiency and product demand.
 
 EndpointName: `/stock-age/turnover-ratio`
 
@@ -180,12 +183,12 @@ API Output:
   "turnover_ratio": 5
 }
 ```
-</details>
+
 
 ### 1.7 Weighted Average Cost
 
-<details>
-<summary>Calculates the average cost of inventory items based on their purchase cost and quantity.  Provides a balanced view of inventory valuation, useful for pricing and financial reporting.</summary>
+
+Calculates the average cost of inventory items based on their purchase cost and quantity.  Provides a balanced view of inventory valuation, useful for pricing and financial reporting.
 
 EndpointName: `/stock-age/weighted-average-cost`
 
@@ -208,14 +211,14 @@ API Output:
   "weighted_average_cost": 233.33
 }
 ```
-</details>
+
 
 ## 2. Advanced Stock Metrics
 
 ### 2.1 Get Reorder Status
 
-<details>
-<summary>Checks the status of inventory items against their reorder points. Helps prevent stock-outs and ensures timely reordering.</summary>
+
+Checks the status of inventory items against their reorder points. Helps prevent stock-outs and ensures timely reordering.
 
 EndpointName: `/stock-metrics/reorder-status`
 
@@ -238,12 +241,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 2.2 Get Stock Valuation
 
-<details>
-<summary>Provides the current valuation of inventory based on various accounting methods. Assists in accurate financial reporting and asset management.</summary>
+
+Provides the current valuation of inventory based on various accounting methods. Assists in accurate financial reporting and asset management.
 
 EndpointName: `/stock-metrics/valuation`
 
@@ -266,12 +269,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 2.3 Get Stock Turnover
 
-<details>
-<summary>Measures how frequently inventory is sold within a period. Indicates sales performance and inventory efficiency.</summary>
+
+Measures how frequently inventory is sold within a period. Indicates sales performance and inventory efficiency.
 
 EndpointName: `/stock-metrics/turnover`
 
@@ -294,12 +297,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 2.4 Get Stock Turnover Ratio
 
-<details>
-<summary>Calculates the ratio of cost of goods sold to average inventory. Helps assess how effectively inventory is managed and sold.</summary>
+
+Calculates the ratio of cost of goods sold to average inventory. Helps assess how effectively inventory is managed and sold.
 
 EndpointName: `/stock-metrics/turnover-ratio`
 
@@ -322,12 +325,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 2.5 Get Stock Availability
 
-<details>
-<summary>Provides information on the current availability of inventory items. Ensures product availability and customer satisfaction.</summary>
+
+Provides information on the current availability of inventory items. Ensures product availability and customer satisfaction.
 
 EndpointName: `/stock-metrics/availability`
 
@@ -348,12 +351,12 @@ API Output:
   "availability": ["In Stock", "Out of Stock", "In Stock"]
 }
 ```
-</details>
+
 
 ### 2.6 Get Backorder Status
 
-<details>
-<summary>Checks the status of backordered items. Helps manage customer expectations and supply chain efficiency.</summary>
+
+Checks the status of backordered items. Helps manage customer expectations and supply chain efficiency.
 
 EndpointName: `/stock-metrics/backorder-status`
 
@@ -375,12 +378,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 2.7 Get Stock Performance
 
-<details>
-<summary>Analyzes the performance of inventory items based on sales and turnover. Identifies top-performing and underperforming products.</summary>
+
+Analyzes the performance of inventory items based on sales and turnover. Identifies top-performing and underperforming products.
 
 EndpointName: `/stock-metrics/performance`
 
@@ -402,12 +405,12 @@ API Output:
   "performance": ["Good", "Excellent", "Average"]
 }
 ```
-</details>
+
 
 ### 2.8 Get Demand Forecast
 
-<details>
-<summary>Predicts future demand for inventory items based on historical data and trends. Aids in inventory planning and reduces the risk of stockouts or overstocking.</summary>
+
+Predicts future demand for inventory items based on historical data and trends. Aids in inventory planning and reduces the risk of stockouts or overstocking.
 
 EndpointName: `/stock-metrics/demand-forecast`
 
@@ -428,12 +431,12 @@ API Output:
   "demand_forecast": 750
 }
 ```
-</details>
+
 
 ### 2.9 Get Stock Discrepancy
 
-<details>
-<summary>Identifies discrepancies between recorded and actual inventory levels. Helps maintain inventory accuracy and reduce shrinkage.</summary>
+
+Identifies discrepancies between recorded and actual inventory levels. Helps maintain inventory accuracy and reduce shrinkage.
 
 EndpointName: `/stock-metrics/discrepancy`
 
@@ -454,12 +457,12 @@ API Output:
   "discrepancy": [-10, 10, -5]
 }
 ```
-</details>
+
 
 ### 2.10 Get Supplier Performance
 
-<details>
-<summary>Evaluates suppliers based on their delivery performance and product quality. Enhances supply chain reliability and efficiency.</summary>
+
+Evaluates suppliers based on their delivery performance and product quality. Enhances supply chain reliability and efficiency.
 
 EndpointName: `/stock-metrics/supplier-performance`
 
@@ -481,12 +484,12 @@ API Output:
   "performance": ["Excellent", "Good", "Poor"]
 }
 ```
-</details>
+
 
 ### 2.11 Get Inventory Turnover Days
 
-<details>
-<summary>Calculates the average number of days it takes to sell inventory. Provides insight into inventory liquidity and sales cycle.</summary>
+
+Calculates the average number of days it takes to sell inventory. Provides insight into inventory liquidity and sales cycle.
 
 EndpointName: `/stock-metrics/inventory-turnover-days`
 
@@ -508,12 +511,12 @@ API Output:
   "turnover_days": 73
 }
 ```
-</details>
+
 
 ### 2.12 Get Stock Cost Analysis
 
-<details>
-<summary>Analyzes the cost structure of inventory items. Helps optimize pricing strategies and cost management.</summary>
+
+Analyzes the cost structure of inventory items. Helps optimize pricing strategies and cost management.
 
 EndpointName: `/stock-metrics/cost-analysis`
 
@@ -535,12 +538,12 @@ API Output:
   "cost_analysis": [1000, 2000, 3000]
 }
 ```
-</details>
+
 
 ### 2.13 Get Safety Stock Level
 
-<details>
-<summary>Calculates the minimum level of inventory required to prevent stockouts. Ensures continuous product availability and customer satisfaction.</summary>
+
+Calculates the minimum level of inventory required to prevent stockouts. Ensures continuous product availability and customer satisfaction.
 
 EndpointName: `/stock-metrics/safety-stock-level`
 
@@ -564,14 +567,14 @@ API Output:
 }
 ```
 
-</details>
+
 
 ## 3. Inventory Optimization
 
 ### 3.1 Stock Holding
 
-<details>
-<summary>Analyzes the current stock holding levels. Helps manage inventory levels efficiently and reduce holding costs.</summary>
+
+Analyzes the current stock holding levels. Helps manage inventory levels efficiently and reduce holding costs.
 
 EndpointName: `/inventory-optimization/stock-holding`
 
@@ -594,12 +597,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 3.2 Excess Stock
 
-<details>
-<summary>Identifies items that are overstocked. Helps reduce excess inventory and free up capital.</summary>
+
+Identifies items that are overstocked. Helps reduce excess inventory and free up capital.
 
 EndpointName: `/inventory-optimization/excess-stock`
 
@@ -622,12 +625,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 3.3 Over Stock
 
-<details>
-<summary>Analyzes inventory levels that exceed the required amount. Identifies potential waste and helps in inventory reduction strategies.</summary>
+
+Analyzes inventory levels that exceed the required amount. Identifies potential waste and helps in inventory reduction strategies.
 
 EndpointName: `/inventory-optimization/over-stock`
 
@@ -650,12 +653,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 3.4 Surplus Orders
 
-<details>
-<summary>Identifies surplus orders that exceed demand. Helps in aligning orders with actual demand to avoid overstocking.</summary>
+
+Identifies surplus orders that exceed demand. Helps in aligning orders with actual demand to avoid overstocking.
 
 EndpointName: `/inventory-optimization/surplus-orders`
 
@@ -677,12 +680,12 @@ API Output:
   "surplus_orders": [0, 50, 150]
 }
 ```
-</details>
+
 
 ### 3.5 Potential Stock Outs
 
-<details>
-<summary>Predicts items that are at risk of stockouts. Helps take proactive measures to replenish stock and avoid lost sales.</summary>
+
+Predicts items that are at risk of stockouts. Helps take proactive measures to replenish stock and avoid lost sales.
 
 EndpointName: `/inventory-optimization/potential-stock-outs`
 
@@ -705,12 +708,12 @@ API Output:
 }
 ```
 
-</details>
+
 
 ### 3.6 Automatic Inventory Classification
 
-<details>
-<summary>Automatically classifies inventory items based on sales value and velocity. Provides an intuitive matrix of product importance, aiding in inventory prioritization.</summary>
+
+Automatically classifies inventory items based on sales value and velocity. Provides an intuitive matrix of product importance, aiding in inventory prioritization.
 
 EndpointName: `/inventory-optimization/automatic-classification`
 
@@ -733,12 +736,12 @@ API Output:
   "classification": ["A", "B", "C"]
 }
 ```
-</details>
+
 
 ### 3.7 Monitor and Measure Product-Specific Lead Times
 
-<details>
-<summary>Tracks and measures lead times for individual products. Helps optimize ordering schedules and improve supply chain efficiency.</summary>
+
+Tracks and measures lead times for individual products. Helps optimize ordering schedules and improve supply chain efficiency.
 
 EndpointName: `/inventory-optimization/lead-time-monitor`
 
@@ -760,12 +763,12 @@ API Output:
   "lead_time_monitor": [5, 7, 10]
 }
 ```
-</details>
+
 
 ### 3.8 Measure and Adjust Lead Time per Item
 
-<details>
-<summary>Measures and adjusts lead time for each inventory item based on performance. Ensures accurate lead time estimation and better inventory planning.</summary>
+
+Measures and adjusts lead time for each inventory item based on performance. Ensures accurate lead time estimation and better inventory planning.
 
 EndpointName: `/inventory-optimization/lead-time-adjustment`
 
@@ -787,4 +790,4 @@ API Output:
   "lead_time_adjustment": [4, 6, 9]
 }
 ```
-</details>
+
