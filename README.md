@@ -6,9 +6,9 @@
 
 <details>
 
-<summary>
+
 Calculates the optimal order quantity to minimize the total inventory costs, including ordering and holding costs. Helps users reduce inventory costs and avoid overstocking or under-stocking.
-</summary>
+
 
 EndpointName: `/stock-age/eoq`
 
