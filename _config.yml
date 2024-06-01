@@ -1,3 +1,4 @@
 remote_theme: pmarsceill/just-the-docs
+markdown: kramdown
 title: Acumatica Stock Aging API Documentation
 description: Comprehensive documentation for the Acumatica Stock Aging API.
